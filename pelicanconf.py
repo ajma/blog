@@ -6,7 +6,7 @@ AUTHOR = u'Andrew Ma'
 SITENAME = u'Andrew Ma'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
