@@ -15,15 +15,15 @@
         <header id="banner" class="body">
                 <h1><a href="http://andrewma.com/">Andrew Ma </a></h1>
                 <nav><ul>
-                                                                                    <li class="active"><a href="http://andrewma.com/category/android.html">Android</a></li>
-                                    <li ><a href="http://andrewma.com/category/windows.html">Windows</a></li>
+                                                                                    <li class="active"><a href="http://andrewma.com/category/android/">Android</a></li>
+                                    <li ><a href="http://andrewma.com/category/windows/">Windows</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
         <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://andrewma.com/bubbling-onclick-events.html" rel="bookmark"
+        <a href="http://andrewma.com/2012/05/11/bubbling-onclick-events/" rel="bookmark"
            title="Permalink to Bubbling OnClick events">Bubbling OnClick events</a></h1>
           </header>
 
@@ -34,10 +34,10 @@
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="http://andrewma.com/author/andrew-ma.html">Andrew Ma</a>
+                By <a class="url fn" href="http://andrewma.com/author/andrew-ma/">Andrew Ma</a>
         </address>
-        <p>In <a href="http://andrewma.com/category/android.html">Android</a>. </p>
-<p>tags: <a href="http://andrewma.com/tag/android.html">android</a><a href="http://andrewma.com/tag/events.html">events</a><a href="http://andrewma.com/tag/onclick.html">onclick</a></p>
+        <p>In <a href="http://andrewma.com/category/android/">Android</a>. </p>
+<p>tags: <a href="http://andrewma.com/tag/android/">android</a><a href="http://andrewma.com/tag/events/">events</a><a href="http://andrewma.com/tag/onclick/">onclick</a></p>
 </footer><!-- /.post-info -->      <p>Today, I ran into a problem where I needed to bubble up the OnClick event. Inside of a RelativeLayout, I had a TextView which I had to make clickable (so that it could get some animation) because of this, the OnClickevent got swallowed up. To get around this, in the constructor, I create an <a class="reference external" href="http://developer.android.com/reference/android/view/View.OnClickListener.html">OnClickListener</a> which would simply call <a class="reference external" href="http://developer.android.com/reference/android/view/View.html#performClick()">performClick()</a> from the parent.</p>
 <p>Here's how it goes</p>
 <div class="highlight"><pre><span class="kd">final</span> <span class="n">View</span> <span class="n">parent</span> <span class="o">=</span> <span class="k">this</span><span class="o">;</span>
@@ -55,8 +55,8 @@
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "bubbling-onclick-events.html";
-        var disqus_url = "http://andrewma.com/bubbling-onclick-events.html";
+        var disqus_identifier = "2012/05/11/bubbling-onclick-events/";
+        var disqus_url = "http://andrewma.com/2012/05/11/bubbling-onclick-events/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://ajma.disqus.com/embed.js';
@@ -74,7 +74,6 @@
                                                     <li><a href="http://getpelican.com/">Pelican</a></li>
                                                     <li><a href="http://python.org/">Python.org</a></li>
                                                     <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                                                    <li><a href="#">You can modify those links in your config file</a></li>
                                                 </ul>
                 </div><!-- /.blogroll -->
                                 <div class="social">
@@ -82,8 +81,10 @@
                         <ul>
                             <li><a href="http://andrewma.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
-                                                    <li><a href="#">You can add links in your config file</a></li>
-                                                    <li><a href="#">Another social link</a></li>
+                                                    <li><a href="https://github.com/ajma">Github</a></li>
+                                                    <li><a href="http://www.linkedin.com/in/andrewma">LinkedIn</a></li>
+                                                    <li><a href="https://plus.google.com/111239791981124653981?rel=author">Google+</a></li>
+                                                    <li><a href="http://stackoverflow.com/users/60117">Stackoverflow</a></li>
                                                 </ul>
                 </div><!-- /.social -->
                 </section><!-- /#extras -->

@@ -15,15 +15,15 @@
         <header id="banner" class="body">
                 <h1><a href="http://andrewma.com/">Andrew Ma </a></h1>
                 <nav><ul>
-                                                                                    <li class="active"><a href="http://andrewma.com/category/android.html">Android</a></li>
-                                    <li ><a href="http://andrewma.com/category/windows.html">Windows</a></li>
+                                                                                    <li class="active"><a href="http://andrewma.com/category/android/">Android</a></li>
+                                    <li ><a href="http://andrewma.com/category/windows/">Windows</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
         <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://andrewma.com/android-lifecycle-for-two-activities.html" rel="bookmark"
+        <a href="http://andrewma.com/2012/01/24/android-lifecycle-for-two-activities/" rel="bookmark"
            title="Permalink to Android Lifecycle for two activities">Android Lifecycle for two activities</a></h1>
           </header>
 
@@ -34,10 +34,10 @@
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="http://andrewma.com/author/andrew-ma.html">Andrew Ma</a>
+                By <a class="url fn" href="http://andrewma.com/author/andrew-ma/">Andrew Ma</a>
         </address>
-        <p>In <a href="http://andrewma.com/category/android.html">Android</a>. </p>
-<p>tags: <a href="http://andrewma.com/tag/android.html">android</a><a href="http://andrewma.com/tag/activity-lifecycle.html">activity-lifecycle</a></p>
+        <p>In <a href="http://andrewma.com/category/android/">Android</a>. </p>
+<p>tags: <a href="http://andrewma.com/tag/android/">android</a><a href="http://andrewma.com/tag/activity-lifecycle/">activity-lifecycle</a></p>
 </footer><!-- /.post-info -->      <p>Today, I ran into some problems of not understanding how the lifecycle of two activities. When one activity starts another activity, when does the <a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onPause()">onPause</a>/<a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onStop()">onStop</a>/<a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onDestroy()">onDestroy</a> run in comparison to the <a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onCreate()">onCreate</a>/<a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onStart()">onStart</a>/<a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onResume()">onResume</a> of the next activity. I put some logging in and here are the results:</p>
 <div class="line-block">
 <div class="line">Activity<strong>A</strong>.<a class="reference external" href="http://developer.android.com/reference/android/app/Activity.html#onCreate()">onCreate</a></div>
@@ -56,8 +56,8 @@
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "android-lifecycle-for-two-activities.html";
-        var disqus_url = "http://andrewma.com/android-lifecycle-for-two-activities.html";
+        var disqus_identifier = "2012/01/24/android-lifecycle-for-two-activities/";
+        var disqus_url = "http://andrewma.com/2012/01/24/android-lifecycle-for-two-activities/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://ajma.disqus.com/embed.js';
@@ -75,7 +75,6 @@
                                                     <li><a href="http://getpelican.com/">Pelican</a></li>
                                                     <li><a href="http://python.org/">Python.org</a></li>
                                                     <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                                                    <li><a href="#">You can modify those links in your config file</a></li>
                                                 </ul>
                 </div><!-- /.blogroll -->
                                 <div class="social">
@@ -83,8 +82,10 @@
                         <ul>
                             <li><a href="http://andrewma.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
-                                                    <li><a href="#">You can add links in your config file</a></li>
-                                                    <li><a href="#">Another social link</a></li>
+                                                    <li><a href="https://github.com/ajma">Github</a></li>
+                                                    <li><a href="http://www.linkedin.com/in/andrewma">LinkedIn</a></li>
+                                                    <li><a href="https://plus.google.com/111239791981124653981?rel=author">Google+</a></li>
+                                                    <li><a href="http://stackoverflow.com/users/60117">Stackoverflow</a></li>
                                                 </ul>
                 </div><!-- /.social -->
                 </section><!-- /#extras -->

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Resolving "SDK does not have any Build Tools installed" error</title>
+        <title>Find Used Memory Slots via Command Line</title>
         <link rel="stylesheet" href="http://andrewma.com/theme/css/main.css">
                 <link href="http://andrewma.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Andrew Ma Atom Feed" />
                 
@@ -15,43 +15,40 @@
         <header id="banner" class="body">
                 <h1><a href="http://andrewma.com/">Andrew Ma </a></h1>
                 <nav><ul>
-                                                                                    <li class="active"><a href="http://andrewma.com/category/android.html">Android</a></li>
-                                    <li ><a href="http://andrewma.com/category/windows.html">Windows</a></li>
+                                                                                    <li ><a href="http://andrewma.com/category/android/">Android</a></li>
+                                    <li class="active"><a href="http://andrewma.com/category/windows/">Windows</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
         <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://andrewma.com/resolving-sdk-does-not-have-any-build-tools-installed-error.html" rel="bookmark"
-           title="Permalink to Resolving "SDK does not have any Build Tools installed" error">Resolving &quot;SDK does not have any Build Tools installed&quot; error</a></h1>
+        <a href="http://andrewma.com/2012/01/14/find-used-memory-slots-via-command-line/" rel="bookmark"
+           title="Permalink to Find Used Memory Slots via Command Line">Find Used Memory Slots via Command Line</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-05-18T00:00:00">
-                Sat 18 May 2013
+        <abbr class="published" title="2012-01-14T00:00:00">
+                Sat 14 January 2012
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="http://andrewma.com/author/andrew-ma.html">Andrew Ma</a>
+                By <a class="url fn" href="http://andrewma.com/author/andrew-ma/">Andrew Ma</a>
         </address>
-        <p>In <a href="http://andrewma.com/category/android.html">Android</a>. </p>
-<p>tags: <a href="http://andrewma.com/tag/android.html">android</a><a href="http://andrewma.com/tag/android-sdk.html">android-sdk</a></p>
-</footer><!-- /.post-info -->      <p>After upgrading my Android SDK to 22, I started running into failed builds with the error message:</p>
-<pre class="literal-block">
-{android-sdk}/tools/ant/build.xml:479: SDK does not have any Build Tools installed
-</pre>
-<p>Couldn’t find very much on the web on how to resolve this and eventually I realized that it was because I only updated existing packages. In SDK 22, the platform tools and build tools are split up into their own items in the SDK manager.</p>
-<p>Make sure you install the build-tools and platform-tools.</p>
+        <p>In <a href="http://andrewma.com/category/windows/">Windows</a>. </p>
+<p>tags: <a href="http://andrewma.com/tag/windows/">windows</a><a href="http://andrewma.com/tag/config/">config</a><a href="http://andrewma.com/tag/ram/">ram</a><a href="http://andrewma.com/tag/memory/">memory</a></p>
+</footer><!-- /.post-info -->      <p>Yesterday, I was going to order some more ram for my laptop and I didn’t have a  screwdriver around to check if the 4gb in my current setup was composed of one 4gb dimm or 2 x 2gb dimm. I found a nifty command-line options (Windows only) to display this information for me.</p>
+<p>wmic MEMORYCHIP get banklabel, capacity, caption, devicelocator, partnumber</p>
+<p>via <a class="reference external" href="http://support.risualblogs.com/blog/2010/05/04/find-used-memory-slots-via-command-line/">Find Used Memory Slots via Command Line</a></p>
 
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "resolving-sdk-does-not-have-any-build-tools-installed-error.html";
-        var disqus_url = "http://andrewma.com/resolving-sdk-does-not-have-any-build-tools-installed-error.html";
+        var disqus_identifier = "2012/01/14/find-used-memory-slots-via-command-line/";
+        var disqus_url = "http://andrewma.com/2012/01/14/find-used-memory-slots-via-command-line/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://ajma.disqus.com/embed.js';
@@ -69,7 +66,6 @@
                                                     <li><a href="http://getpelican.com/">Pelican</a></li>
                                                     <li><a href="http://python.org/">Python.org</a></li>
                                                     <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                                                    <li><a href="#">You can modify those links in your config file</a></li>
                                                 </ul>
                 </div><!-- /.blogroll -->
                                 <div class="social">
@@ -77,8 +73,10 @@
                         <ul>
                             <li><a href="http://andrewma.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
-                                                    <li><a href="#">You can add links in your config file</a></li>
-                                                    <li><a href="#">Another social link</a></li>
+                                                    <li><a href="https://github.com/ajma">Github</a></li>
+                                                    <li><a href="http://www.linkedin.com/in/andrewma">LinkedIn</a></li>
+                                                    <li><a href="https://plus.google.com/111239791981124653981?rel=author">Google+</a></li>
+                                                    <li><a href="http://stackoverflow.com/users/60117">Stackoverflow</a></li>
                                                 </ul>
                 </div><!-- /.social -->
                 </section><!-- /#extras -->
