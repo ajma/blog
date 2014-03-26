@@ -33,7 +33,8 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('Github', 'https://github.com/ajma'),
           ('LinkedIn', 'http://www.linkedin.com/in/andrewma'),
           ('Google+', 'https://plus.google.com/111239791981124653981?rel=author'),
-          ('Stackoverflow', 'http://stackoverflow.com/users/60117'),)
+          ('Stackoverflow', 'http://stackoverflow.com/users/60117'),
+          ('Amazon.com', 'http://www.amazon.com/?tag=andma-20'),)
 
 DEFAULT_PAGINATION = 10
 
